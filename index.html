@@ -29,8 +29,8 @@
                         <nav>
                             <ul class="flex gap-10">
                                 <li><a href="#about">About</a></li>
-                                <li><a href="">Tools</a></li>
-                                <li><a href="">Get in touch</a></li>
+                                <li><a href="#tools">Tools</a></li>
+                                <li><a href="#contact">Get in touch</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -49,7 +49,19 @@
                                         to sharpen my front-end development
                                         skills
                                     </p>    
-                                    <div class="hero-banner-socials">
+                                    <div class="hero-buttons">
+                                        <a 
+                                            href="#contact"
+                                            class="button primary"
+                                        >
+                                            Contact me
+                                        </a>
+                                        <a 
+                                            href="./assets/img/resume.pdf"
+                                            class="button secondary"
+                                        >
+                                            Resume
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +105,7 @@
                     </div>                        
                 </div>    
             </section>
-            <section class="tools">
+            <section class="tools" id="#tools">
                 <div class="container">
                     <div class="section-title">
                         <h2>Skills and Tools</h2>
@@ -191,7 +203,7 @@
                         <h2>Contact</h2>
                         <h3>Connect with me</h3>
                     </div>
-                    <div class="section-content flex flex-between">
+                    <div class="section-content">
                         <div class="contact-info">
                             <p>
                                 If you want to know more about me or my work, 
@@ -199,64 +211,66 @@
                                 send me a message. I'd love to hear from you.
                             </p>
                         </div>
-                        <div class="socials">
-                            <ul class="flex gap-30">
-                                <li>
-                                    <a 
-                                        href="https://github.com/ladeyekun"
-                                        title="Github"
-                                    >
-                                        <i 
-                                            class="fa-brands fa-github"
+                        <div class="socials flex flex-between">
+                            <a 
+                                href="https://github.com/ladeyekun" 
+                                target="_blank"
+                            >
+                                <div class="box flex gap-20">
+                                    <div class="image grid grid-center">
+                                        <img 
+                                            src="./assets/img/github.png"
                                         >
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        href="https://www.facebook.com/latadeyek"
-                                        title="Facebook"
-                                    >
-                                        <i 
-                                            class="fa-brands fa-facebook-f"
+                                    </div>
+                                    <div class="description">
+                                        <p class="github">Github</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a 
+                                href="https://www.facebook.com/latadeyek"
+                                target="_blank"
+                            >
+                                <div class="box flex gap-20">
+                                    <div class="image grid grid-center">
+                                        <img 
+                                            src="./assets/img/facebook.png">
+                                    </div>
+                                    <div class="description">
+                                        <p>Facebook</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a 
+                                href="https://twitter.com/latadeyek"
+                                target="_blank"
+                            >
+                                <div class="box flex gap-20">
+                                    <div class="image grid grid-center">
+                                        <img 
+                                            src="./assets/img/twitter.png"
                                         >
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        href="https://www.instagram.com/latadeyek"
-                                        title="Instagram"
-                                    >
-                                        <i 
-                                            class="fa-brands fa-instagram"
+                                    </div>
+                                    <div class="description">
+                                        <p>Twitter</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a 
+                                href="mailto:lateef.adeyekun@gmail.com"
+                                target="_blank"
+                            >
+                                <div class="box flex gap-20">
+                                    <div class="image grid grid-center">
+                                        <img 
+                                            src="./assets/img/mail.png"
                                         >
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        href="https://twitter.com/latadeyek"
-                                        title="Twitter"
-                                    >
-                                        <i 
-                                            class="fa-brands fa-x-twitter"
-                                        >
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="mailto:latadeyek@gmail.com"
-                                        title="Shoot me an email"
-                                    >
-                                        <i 
-                                            class="fa-regular fa-envelope"
-                                        >
-                                        </i>
-                                    </a>
-                                </li>
-                            </ul>                    
+                                    </div>
+                                    <div class="description">
+                                        <p>Email</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>                        
                 </div>    
@@ -264,7 +278,7 @@
         </main>
         <footer>
             <div class="container">
-                <p>&copy; 2024 Lateef Adeyekun</p>
+                <p>All rights reserved. Lateef Adeyekun &copy; 2024</p>
             </div>
         </footer>        
     </body>

@@ -5,23 +5,18 @@
 /*----------------------*/
 
 :root {
-    --app-primary-font-color: #eeeeee;
+    --app-primary-font-color: #101b25;
 
-    --app-primary-color: #e2b13c;
-    --app-primary-dark-color: #fab005;
-    --app-secondary-color: #fff;
-    --app-third-color:#000;
+    --app-primary-color: #0065C7;
+    --app-button-bg-color: #0065C7;
+    --app-button-bg-color-hover: #014991;
+    --app-button-bg-color-primary: #c767b7;
+    --app-button-bg-color-primary-hover: #99438b;
     --app-light-beige-color: #f8f7f6;
-    --app-banner-font-size: 48px;
+
     --app-header-height: 90svh;
     --app-navbar-height: 80px;
-    --app-banner-height: 300px;
     --app-footer-height: 60px;
-    --app-footer-font-size: 16px;
-    --app-section-margin-top: 30px;
-    --app-section-margin-bottom: 80px;    
-}
-
 a {
     text-decoration: none;
 }
@@ -106,7 +101,7 @@ header {
 
     h3 {
         color: var(--app-primary-font-color);
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         letter-spacing: 1.5px;
     }    
@@ -132,14 +127,28 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--app-light-beige-color);
-    background-color: #c6e0eb;
-    border-radius: 5px;
+    color: var(--app-primary-color);
 }
 
 .hero-banner-container {
     height: calc(100% - 80px);
+    color: var(--app-primary-font-color);
+}
+
+.button {
+    border-radius: 5px;
+    padding: 8px 25px;
+    font-size: 18px;
+    transition: all 0.25s ease-in-out;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--app-button-bg-color);
     color: #fff;
+}
+
+.button:hover {
+    background-color: var(--app-button-bg-color-hover);
 }
 
 
@@ -148,21 +157,36 @@ nav ul li a:hover {
         font-size: 40px;
         font-weight: 600;
         padding-bottom: 5px;
-        color: #fff;    
+        color: var(--app-primary-font-color);    
     }
 
     h3 {
         font-size: 30px;
         font-weight: 600;
         padding-bottom: 5px;
-        color: #fff;
+        color: var(--app-primary-font-color);
     }
 
     p {
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: var(--app-primary-font-color);
     }
+
+    .hero-buttons {
+        margin-top: 30px;
+    
+        .primary {
+            background-color: var(--app-button-bg-color-primary);
+            color: var(--app-light-beige-color);
+            display: inline-block;
+        }
+    
+        .primary:hover {
+            background-color: var(--app-button-bg-color-primary-hover);
+        }    
+    }
+    
 }
 
 .picture {
@@ -246,76 +270,32 @@ section.about, section.contact {
         color: #333;
         line-height: 24px;
     }
+}
 
-    .box {
-        width: 200px;
-        height: 60px;
-        background-color: #f9fafb;
-        border-radius: 5px;
-        box-shadow: 1px 1px 2px rgb(0 0 0 / 5%);
+.box {
+    width: 200px;
+    height: 60px;
+    background-color: #f9fafb;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 5%);
 
-        img {
-            height: 35px;
-            padding-left: 15px;
-        }
+    img {
+        height: 35px;
+        padding-left: 15px;
+    }
 
-        .description {
+    .description {
 
-            p {
-                font-size: 20px;
-                line-height: 60px;
-                /*padding-left: 15px*/
-            }
+        p {
+            font-size: 20px;
+            line-height: 60px;
+            /*padding-left: 15px*/
         }
     }
 }
 
-section.contact {
-    .contact-info {
-        width:600px;
-    }
-
-    .section-content {
-        width: 100%;
-    }
-
-    .socials {
-        margin-top: 15px;
-        height: 40px;
-    
-        li {
-            line-height: 40px;
-    
-            a {
-                font-size: 30px;
-                color: #333;
-                display: inline-block;
-                transition: transform 0.2s;
-            }
-            
-            a:hover {
-                transform: scale(1.2);
-            }
-    
-            a:hover .fa-github {
-                color: #1e3050;
-            }
-    
-            a:hover .fa-facebook-f {
-                color: #0866ff;
-            }
-        
-            a:hover .fa-instagram {
-                color: #fd07b0;
-            }
-        
-            a:hover .fa-x-twitter {
-                color: #000;
-            }
-        
-        }
-    }
-    
+.socials {
+    margin-top: 25px;
 }
 
 /*----------------------*/
