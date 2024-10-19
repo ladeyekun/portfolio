@@ -87,7 +87,7 @@ header {
 }
 
 .hero-banner {
-    background: #fff url('../img/hero-banner.jpg') no-repeat center center;
+    background: #fff url('../img/hero-banner.jpg') center center / cover no-repeat;
     height: var(--app-header-height);
 }
 
