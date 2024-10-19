@@ -15,13 +15,7 @@ and Sybase, and front-end libraries like jQuery and Bootstrap.
 When I am not coding, you will definitely find me watching soccer or hanging 
 out with friends and families.
 
-## Technologies proficient with 
-* ![HTML5](./assets/img/html5)
-* ![CSS3](./assets/img/css3.png)
-* ![Javascript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg)
-* ![TypeScript](https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg)
-* ![PHP](./assets/img/php.png)
-* ![Java](./assets/img/java.png)
-* ![GIT](./assets/img/git.png)
-* ![MySQL](./assets/img/mysql.png)
-* ![MSSQL]
+## Technologies used for this portfolio 
+* HTML5
+* CSS3
+* JavaScript
