@@ -17,6 +17,8 @@
     --app-header-height: 90svh;
     --app-navbar-height: 80px;
     --app-footer-height: 60px;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,7 +32,7 @@ html {
     margin-inline: auto;
 }
 
-body{
+body {
     font-family: "poppins", sans-serif;
     background-color: #fff;
     font-weight: 100;
@@ -117,6 +119,10 @@ nav {
     }
 }
 
+button.hamburger {
+    display: none;
+}
+
 nav ul li a {
     color: var(--app-primary-font-color);
     padding: 8px 15px;
@@ -133,6 +139,11 @@ nav ul li a:hover {
 .hero-banner-container {
     height: calc(100% - 80px);
     color: var(--app-primary-font-color);
+}
+
+.hero-banner-content {
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -154,7 +165,7 @@ nav ul li a:hover {
 
 .text-grp {
     h2 {
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 600;
         padding-bottom: 5px;
         color: var(--app-primary-font-color);    
@@ -188,9 +199,13 @@ nav ul li a:hover {
     }
     
 }
+.hero-banner-col {
+    flex: 0 0 auto;
+    width: calc(50% - 10px);
+}
 
 .picture {
-    max-width: 400px;
+    /*max-width: 400px;*/
 
     img {
         width: 100%;
@@ -262,6 +277,8 @@ section.about, section.contact {
 
 .section-content {
     margin: 15px 0 5px 0;
+    width: 100%;
+    flex-wrap: wrap;
     
     p {
         margin-bottom: 12px;
@@ -273,7 +290,11 @@ section.about, section.contact {
 }
 
 .box {
-    width: 200px;
+    
+    /*width: 200px;*/
+    flex: 0 0 auto;
+    width: calc(25% - 10px);
+
     height: 60px;
     background-color: #f9fafb;
     border-radius: 5px;
@@ -296,6 +317,8 @@ section.about, section.contact {
 
 .socials {
     margin-top: 25px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 /*----------------------*/
@@ -311,5 +334,96 @@ footer {
         line-height: var(--app-footer-height);
         text-align: center;
         font-weight: 400;
+    }
+}
+
+/*-----------------------*/
+/* Media queries         */
+/*-----------------------*/
+
+@media screen and (max-width: 1200px) {
+    .hero-banner-col {
+        width: calc(50% - 10px);
+    }
+    
+    .box {
+        width: calc(25% - 10px);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hero-banner-col {
+        width: calc(100%);
+    }
+
+    .box {
+        width: calc(50% - 15px);
+    }
+
+    .hero-banner-col img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-banner-col {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .section-title {
+        h2 {
+            font-size: 30px;
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .navbar {
+
+        nav {
+            ul {
+                display: none;
+            }
+
+            button.hamburger {
+                display: block;
+                font-size: 20px;
+                background: none;
+                border: none;
+                color: var(--app-primary-font-color);
+                line-height: var(--app-navbar-height);
+                padding: 0 10px;
+                cursor: pointer;          
+            }
+
+            ul.active {
+                display: block;
+                list-style: none;
+                line-height: 1px;
+
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .hero-banner-col {
+        width: calc(100%);
+    }
+    
+    .box {
+        width: calc(100%);
     }
 }

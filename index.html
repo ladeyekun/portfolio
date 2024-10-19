@@ -26,17 +26,18 @@
                                 <h3>Lateef</h3>
                             </a>                 
                         </div>
-                        <nav>
+                        <nav class="flex">
                             <ul class="flex gap-10">
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#tools">Tools</a></li>
                                 <li><a href="#contact">Get in touch</a></li>
                             </ul>
+                            <button class="hamburger">&#9776;</button>
                         </nav>
                     </div>
                     <div class="hero-banner-container grid grid-center">
                         <div class="hero-banner-content flex flex-between">
-                            <div class="text grid grid-center">
+                            <div class="hero-banner-col text grid grid-center">
                                 <div class="text-grp">
                                     <h2 class="intro">Hi, I am Lateef</h2>
                                     <h3 class="role typing-effect">I'm a 
@@ -65,7 +66,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="picture grid grid-center">
+                            <div class="hero-banner-col picture grid grid-center">
                                 <img 
                                     src="./assets/img/developer.svg"
                                 >
@@ -105,34 +106,34 @@
                     </div>                        
                 </div>    
             </section>
-            <section class="tools" id="#tools">
+            <section class="tools" id="tools">
                 <div class="container">
                     <div class="section-title">
                         <h2>Skills and Tools</h2>
                         <h3>Technologies I have used</h3>
                     </div>
-                    <div class="section-content flex flex-between">
-                        <div class="box flex gap-20">
+                    <div class="section-content flex gap-10">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    src="./assets/img/html5.png"
                                 >
                             </div>
                             <div class="description">
                                 <p>HTML 5</p>
                             </div>
                         </div>
-                        <div class="box flex gap-20">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                                    src="./assets/img/css3.png"
                                 >
                             </div>
                             <div class="description">
                                 <p>CSS 3</p>
                             </div>
                         </div>
-                        <div class="box flex gap-20">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -142,7 +143,7 @@
                                 <p>JavaScript</p>
                             </div>
                         </div>
-                        <div class="box flex gap-20">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
                                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
@@ -153,8 +154,8 @@
                             </div>
                         </div>
                     </div>                        
-                    <div class="section-content flex flex-between">
-                        <div class="box flex gap-20">
+                    <div class="section-content flex gap-10">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
                                     src="./assets/img/php.png"
@@ -164,7 +165,7 @@
                                 <p>PHP</p>
                             </div>
                         </div>
-                        <div class="box flex gap-20">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
                                     src="./assets/img/java.png"
@@ -174,7 +175,7 @@
                                 <p>Java</p>
                             </div>
                         </div>
-                        <div class="box flex gap-20">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
                                     src="./assets/img/mysql.png"
@@ -184,10 +185,10 @@
                                 <p>MySQL</p>
                             </div>
                         </div>
-                        <div class="box flex gap-20">
+                        <div class="box flex gap-10">
                             <div class="image grid grid-center">
                                 <img 
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                                    src="./assets/img/git.png"
                                 >
                             </div>
                             <div class="description">
@@ -211,66 +212,75 @@
                                 send me a message. I'd love to hear from you.
                             </p>
                         </div>
-                        <div class="socials flex flex-between">
-                            <a 
-                                href="https://github.com/ladeyekun" 
-                                target="_blank"
-                            >
-                                <div class="box flex gap-20">
-                                    <div class="image grid grid-center">
-                                        <img 
-                                            src="./assets/img/github.png"
-                                        >
+                        <div class="socials flex gap-10">
+                            <div class="box flex gap-10">
+                                <a 
+                                    href="https://github.com/ladeyekun"
+                                    target="_blank"
+                                >
+                                    <div class="flex gap-20 height-100">
+                                        <div class="image grid grid-center">
+                                            <img 
+                                                src="./assets/img/github.png"
+                                            >
+                                        </div>
+                                        <div class="description">
+                                            <p>Github</p>
+                                        </div>
                                     </div>
-                                    <div class="description">
-                                        <p class="github">Github</p>
+                                </a>                            
+                            </div>
+                            <div class="box flex gap-10">
+                                <a 
+                                    href="https://www.facebook.com/latadeyek"
+                                    target="_blank"
+                                >
+                                    <div class="flex gap-20 height-100">
+                                        <div class="image grid grid-center">
+                                            <img 
+                                                src="./assets/img/facebook.png"
+                                            >
+                                        </div>
+                                        <div class="description">
+                                            <p>Facebook</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a 
-                                href="https://www.facebook.com/latadeyek"
-                                target="_blank"
-                            >
-                                <div class="box flex gap-20">
-                                    <div class="image grid grid-center">
-                                        <img 
-                                            src="./assets/img/facebook.png">
+                                </a>                            
+                            </div>
+                            <div class="box flex gap-10">
+                                <a 
+                                    href="https://twitter.com/latadeyek"
+                                    target="_blank"
+                                >
+                                    <div class="flex gap-20 height-100">
+                                        <div class="image grid grid-center">
+                                            <img 
+                                                src="./assets/img/twitter.png"
+                                            >
+                                        </div>
+                                        <div class="description">
+                                            <p>Twitter</p>
+                                        </div>
                                     </div>
-                                    <div class="description">
-                                        <p>Facebook</p>
+                                </a>                            
+                            </div>
+                            <div class="box flex gap-10">
+                                <a 
+                                    href="mailto:lateef.adeyekun@gmail.com"
+                                    target="_blank"
+                                >
+                                    <div class="flex gap-20 height-100">
+                                        <div class="image grid grid-center">
+                                            <img 
+                                                src="./assets/img/mail.png"
+                                            >
+                                        </div>
+                                        <div class="description">
+                                            <p>Email me</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a 
-                                href="https://twitter.com/latadeyek"
-                                target="_blank"
-                            >
-                                <div class="box flex gap-20">
-                                    <div class="image grid grid-center">
-                                        <img 
-                                            src="./assets/img/twitter.png"
-                                        >
-                                    </div>
-                                    <div class="description">
-                                        <p>Twitter</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a 
-                                href="mailto:lateef.adeyekun@gmail.com"
-                                target="_blank"
-                            >
-                                <div class="box flex gap-20">
-                                    <div class="image grid grid-center">
-                                        <img 
-                                            src="./assets/img/mail.png"
-                                        >
-                                    </div>
-                                    <div class="description">
-                                        <p>Email</p>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>                            
+                            </div>
                         </div>
                     </div>                        
                 </div>    
