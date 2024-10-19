@@ -101,11 +101,8 @@ header {
     font-weight: 500;
     line-height: var(--app-navbar-height);
 
-    h3 {
-        color: var(--app-primary-font-color);
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 1.5px;
+    img {
+        height: var(--app-navbar-height);
     }    
 }
 
